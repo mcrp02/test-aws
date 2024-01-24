@@ -1,0 +1,413 @@
+/* ### ** Configuraciones Generales ** ### */
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+:root{
+    --bg-circle:#00BF63;
+    --bg-button:#00BF63;
+
+}
+h1{
+    font-size: 26px;
+    font-weight: bold;
+   
+}
+
+.container{
+
+    max-width: 1440px;
+    min-width: 320px;
+    margin: auto;
+}
+/* ### ** Header ** ### */
+
+#hed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    background-image: url("https://mybucket-manuela.s3.us-east-2.amazonaws.com/img/2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    
+}
+header{
+    min-height: 50px;
+}
+header .container{
+    margin: 0 15px 65px 15px;
+    width: 90px;
+    height: 200px;
+}
+/* ### ** Borcelle ** ### */
+
+header .borce{
+    background: black;
+    color: white;
+    margin: 10px 200px 20px 10px;
+    padding: 4px 5px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+
+}
+/* ### ** Titulos & Circulo ** ### */
+
+header .special{
+    display: flex;
+    flex-direction: row;
+}
+header .circle{
+    width: 70px;
+    height: 70px;
+    background: var(--bg-circle);
+    border-radius: 50%;
+    margin: 15px 5px 15px 25px;
+    border:none;
+}
+header .circle>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px 0 5px 17px;
+}
+/* ### ** Descripción ** ### */
+
+header .descrip{
+    margin: 0px 70px 10px 5px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+/* ### ** Catalogos ** ### */
+
+img{
+    width: 100%;
+}
+
+#cat .container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#cat .catalogo{
+
+    margin: 15px 0 10px 0;
+   
+}
+
+#cat img{
+    width: 80px;
+    height: 85px;
+    margin: 10px 7px 5px 0;
+
+}
+
+#cat .article{
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+#cat .leyenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#cat .prices{
+  
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+#cat .prices-old{
+  
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-decoration: line-through red;
+}
+/* ### ** Footer ** ### */
+
+footer{
+    background: black;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    height: 50px;
+    width: 95%;
+    padding: 10px 15px;
+    margin: 5px 125px 5px 10px;
+
+}
+footer .shop{
+    background: var(--bg-button);
+    color: white;
+    margin: 5px 210px 10px 10px; 
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+/* ### ** 720px ** ### */
+
+@media screen and (min-width: 720px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        
+    }
+
+    header .container{
+        margin: 0 70px 50px 10px;
+        width: 650px;
+        height: 250px;
+    }
+
+     /* ### ** Borcelle ** ### */
+
+    header .borce{
+        background: black;
+        color: white;
+        margin: 10px 500px 20px 10px;
+        padding: 5px 6px;
+        border-radius: 18px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+     /* ### ** Titulos & Circulo ** ### */
+
+    header .special{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .special>h1{
+        font-size: 35px;
+        font-weight: bolder;
+    }
+    
+    header .circle{
+        width: 120px;
+        height: 110px;
+        background: var(--bg-circle);
+        border-radius: 50%;
+        margin: 0 10px 35px 5px;
+        border:none;
+    }
+
+    #hed .circle>span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size:35px;
+        font-weight:bold;
+        margin: 15px 10px 5px 25px;
+    }
+
+    #hed .descrip{
+        padding: 5px 5px;
+        margin: 0 280px 0 5px;
+    }
+
+    #hed p{
+        font-weight: bold;
+    }
+
+    /* ### ** Catalogos ** ### */
+
+    #cat img{
+        width: 150px;
+        height: 170px;
+        margin: 5px 15px 5px 27px;
+    
+    }
+    #cat{
+        padding: 25px 15px;
+    }
+    #cat .container{
+        display:grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 200px);
+        grid-gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #cat .catalogo{
+    
+        margin: 10px 5px 5px 0;
+        align-items: center;  
+    }
+    #cat .article{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    /* ### ** Footer ** ### */
+    
+    footer{
+        background: black;
+        display: flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items: left;
+        height: 50px;
+        width: 90%;
+        padding: 20px 15px;
+        margin: 5px 15px 5px 15px;
+    }
+    
+    #fot .shop{
+        background: var(--bg-button);
+        color: white;
+        margin: 5px 480px 10px 10px; 
+        text-align: center;
+        padding: 5px 5px;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        
+    }
+
+    header .container{
+        margin: 0 200px 80px 5px;
+        width: 1100px;
+        height: 250px;
+    }
+
+    /* ### ** Borcelle ** ### */
+
+    header .borce{
+        background: black;
+        color: white;
+        margin: 10px 900px 20px 10px;
+        padding: 8px 10px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 25px;
+    }
+    /* ### ** Titulos & Circulo ** ### */
+
+    header .special{
+        display: flex;
+        flex-direction: row;
+    }
+    header .special>h1{
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    #hed .circle{
+        width:150px;
+        height: 130px;
+        background: var(--bg-circle);
+        border-radius: 50%;
+        margin: 15px 5px 5px 25px;
+        border:none;    
+    }   
+    #hed .circle>.spn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        margin: 20px 15px 15px 40px;
+    }
+    #hed .descrip{
+        padding: 15px 15px;
+        margin: 0 280px 0 5px;
+    }
+
+    #hed p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+     /* ### ** Catalogos ** ### */
+
+     #cat img{
+        width: 250px;
+        height: 270px;
+        margin: 5px 65px 5px 45px;
+    
+    }
+    #cat{
+        padding: 75px 45px;
+    }
+    #cat .container{
+        display:grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(2, 250px);
+        grid-gap:95px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #cat .catalogo{
+        margin: 65px 10px 45px 15px;
+        align-items: center;  
+    }
+    #cat .article{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+     /* ### ** Footer ** ### */
+    
+     footer{
+        background: black;
+        display: flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items: left;
+        height: 50px;
+        width: 90%;
+        padding: 20px 15px;
+        margin: 5px 15px 5px 15px;
+    }
+    
+    #fot .shop{
+        background: var(--bg-button);
+        color: white;
+        margin: 15px 950px 10px 10px; 
+        text-align: center;
+        padding: 5px 5px;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+
+
+
+}
+
